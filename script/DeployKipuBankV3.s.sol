@@ -14,32 +14,28 @@ contract DeployScript is Script {
     // Sepolia network addresses
     address constant UNISWAP_ROUTER_SEPOLIA = 0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008;
     address constant USDC_SEPOLIA = 0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8;
-    
+
     // Bank configuration parameters
     uint256 constant BANK_CAP = 1000000 * 1e6; // 1 Million USDC
-    
+
     /**
      * @notice Main deployment function
      * @dev Reads PRIVATE_KEY from environment variables
      */
     function run() external {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        
+
         vm.startBroadcast(deployerPrivateKey);
-        
+
         // Deploy KipuBankV3 contract
-        KipuBankV3 bank = new KipuBankV3(
-            UNISWAP_ROUTER_SEPOLIA,
-            USDC_SEPOLIA,
-            BANK_CAP
-        );
-        
+        KipuBankV3 bank = new KipuBankV3(UNISWAP_ROUTER_SEPOLIA, USDC_SEPOLIA, BANK_CAP);
+
         vm.stopBroadcast();
-        
+
         // Log deployment information
         _logDeploymentInfo(bank);
     }
-    
+
     /**
      * @notice Internal function to log deployment details
      * @param bank Deployed KipuBankV3 contract instance
