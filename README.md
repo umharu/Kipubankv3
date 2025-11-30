@@ -2,6 +2,8 @@
 
 KipuBankV3 is a decentralized bank that accepts deposits in ETH and ERC20 tokens, automatically converting all assets to USDC via Uniswap V2.
 
+## https://sepolia.etherscan.io/address/0xEFaB5740F25995825569B5FA08d4831A3f108368
+
 ## 🎯 Key Features
 
 - ✅ Native ETH deposits with automatic USDC conversion
@@ -99,7 +101,7 @@ foundryup
 ### Clone and Install Dependencies
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/umharu/Kipubankv3.git
 cd KipuBankV3
 forge install
 ```
@@ -176,8 +178,6 @@ forge script script/Deploy.s.sol:DeployScript \
   --verify \
   -vvvv
 ```
-
-### Manual Verification (if needed)
 
 ### Sepolia Addresses
 
