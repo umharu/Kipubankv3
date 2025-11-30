@@ -11,7 +11,7 @@ import {IUniswapV2Router02} from "@uniswap/v2-periphery/contracts/interfaces/IUn
  * @notice Decentralized bank that accepts ETH and ERC20 tokens, automatically converting 
  * all deposits to USDC using Uniswap V2
  * @dev Integrates Uniswap V2 for automatic swaps and maintains a capacity limit (bankCap)
- * @author Kipu Protocol
+ * @author maximilian0.eth
  */
 contract KipuBankV3 is ReentrancyGuard {
     using SafeERC20 for IERC20;
