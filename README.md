@@ -311,31 +311,10 @@ kipuBank.transferOwnership(newOwner);
 uint256 available = kipuBank.availableCapacity();
 ```
 
-## 🔧 Maintenance and Future Upgrades
-
-### Planned Improvements
-
-1. **Multi-DEX Support**: Integrate other DEXs for better pricing
-2. **Yield Generation**: Deposit idle USDC in lending protocols
-3. **NFT Receipts**: Issue NFTs as deposit receipts
-4. **Governance Token**: Token for parameter voting
-5. **Flash Loans**: Allow flash loans from USDC pool
-6. **Layer 2 Deployment**: Deploy on Arbitrum, Optimism, etc.
-
-## 🤝 Contributions
-
-This project was developed as a final project for the Web3 development course.
+## 🤝 Credits
+Built with ❤️ by maximilian0.eth for ETH-KIPU
 
 ## 📄 License
 
 MIT License
 
-## 👥 Team
-
-- Lead Developer: maximilian0.eth
-- Course: ETH-KIPU TT
-- Date: 2025
-
----
-
-**Note**: This contract is an educational project. For production use, a complete professional audit is recommended.
